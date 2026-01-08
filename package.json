@@ -1,0 +1,20 @@
+{
+  "name": "ti202-cm1-slidev",
+  "version": "1.0.0",
+  "description": "CM1 - TI202",
+  "scripts": {
+    "dev:cm1": "npx @slidev/cli CM1.md",
+    "build:cm1": "npx @slidev/cli build CM1.md --base /ti202-cm1-slidev/cm1/ --out dist/cm1",
+    "build": "npm run build:cm1",
+    "export:cm1": "npx @slidev/cli export CM1.md --output exports/CM1.pdf",
+    "export": "npm run export:cm1"
+  },
+  "keywords": ["slidev", "presentation", "algorithm", "data-structures"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@slidev/cli": "^0.49.0",
+    "@slidev/theme-default": "latest",
+    "playwright-chromium": "^1.40.0"
+  }
+}
